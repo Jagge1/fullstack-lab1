@@ -6,3 +6,5 @@ const app = express();
 app.use(express.bodyParser())
 
 mongoose.connect(process.env.MONG_URI);
+
+
