@@ -68,8 +68,7 @@ app.put('/api/dishes/:id', async (req, res) => {
       return res.status(404).json({message: 'Error: Dish not found'})
     }
 
-    const updatedDish = await Dish.findById(id)
-    res.status(200).json(updatedDish)
+    res.status(200).json(dish)
     
   } catch (error) {
     return res.status(500).json({error: error.message})
@@ -77,7 +76,19 @@ app.put('/api/dishes/:id', async (req, res) => {
 });
 
 app.delete('/api/dishes/:id', async (req, res) => {
-  const {dishId} = req.params;
+  try {
+    const {id} = req.params;
+
+    const dish = await Dish.findByIdAndDelete(id);
+
+    if (dish === null ) {
+      return res.status(404).json({message: 'Error: Dish not found'})
+    }
+    res.status(204).end()
+    
+  } catch (error) {
+    return res.status(500).json({error: error.message})
+  }
 });
 
 app.listen(port, ()=> console.log(`Server is listening to port: ${port}`));
