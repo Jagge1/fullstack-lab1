@@ -59,7 +59,21 @@ app.post('/api/dishes', async (req, res) => {
 });
 
 app.put('/api/dishes/:id', async (req, res) => {
-  const {dishId} = req.params;
+  try {
+    const {id} = req.params;
+
+    const dish = await Dish.findByIdAndUpdate(id, req.body);
+
+    if (!dish) {
+      return res.status(404).json({message: 'Error: Dish not found'})
+    }
+
+    const updatedDish = await Dish.findById(id)
+    res.status(200).json(updatedDish)
+    
+  } catch (error) {
+    return res.status(500).json({error: error.message})
+  }
 });
 
 app.delete('/api/dishes/:id', async (req, res) => {
