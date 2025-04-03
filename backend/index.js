@@ -11,21 +11,18 @@ app.use(express.static('frontend'));
 mongoose.connect(process.env.MONG_URI);
 
 app.get('/api/dishes', async (req, res) => {
-
   try {
-
     const dishes = await Dish.find({});
 
     res.status(200).json(dishes);
     console.log('Debug')
     
   } catch (error) {
-    res.status(500).json({message: error.message})
+    return res.status(500).json({message: error.message})
   }
 });
 
 app.get('/api/dishes/:name', async (req, res) => {
-
   const {name} = req.params;
 
   try {
@@ -40,25 +37,33 @@ app.get('/api/dishes/:name', async (req, res) => {
     }
 
   } catch (error) {
-    res.status(500).json({message: error.message})
+    return res.status(500).json({message: error.message})
   }
-
 });
 
-app.post('/api/dishes', async (req, res) => {
+app.post('/api/dishes', async (req, res) => {   
+    const {name} = req.body;
 
+    try {
+      const dish = await Dish.find({name: name});
+
+      if (dish.length > 0){
+        return res.status(409).json({message: 'Error: Dish already exists'})
+      }
+      const newDish = await Dish.create(req.body)
+      res.status(201).json({newDish})
+
+    } catch (error) {
+      return res.status(500).json({error: error.message});
+    }
 });
 
 app.put('/api/dishes/:id', async (req, res) => {
-
   const {dishId} = req.params;
-
 });
 
 app.delete('/api/dishes/:id', async (req, res) => {
-
   const {dishId} = req.params;
-
 });
 
 app.listen(port, ()=> console.log(`Server is listening to port: ${port}`));
