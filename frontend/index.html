@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resturant</title>
+  <title>Restaurant</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,9 +20,51 @@
 
     </tr>
 
-    <tbody>
+    <article id="myModal" class="modal">
       
-    </tbody>
+      <article class="modal-content">
+        <span class="close">&times;</span>
+
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+
+        <article id="update-form">
+        <form >
+
+        <label for="">Name</label>
+        <input class="input-field" type="text" name="" id="name-input" placeholder="Hamburger">
+
+        <label for="">Ingredients (separate with ",")</label>
+        <textarea class="textbox" id="Ingredients-input" placeholder="500g ground beef, 1 onion..."></textarea>
+
+        <label for="">Cooking steps (separate with ",")</label>
+        <textarea class="textbox" id="cooking-steps-input" placeholder="Season the ground beef with salt and pepper, Form into 4 burger patties..."></textarea>
+
+        <label for="">Cooking Time </label>
+        <input class="input-field" type="text" name="" id="cooking-time-input" placeholder="40-45 minutes">
+
+        <label for="">Flavor Profile (separate with ",")</label>
+        <input class="input-field" type="text" name="" id="flavor-profile-input" placeholder="savory, juicy...">
+
+        <label for="">Origin</label>
+        <input class="input-field" type="text" name="" id="origin-input" placeholder="United States">
+
+        <input type="submit" value="Submit" id="submit-btn">
+        </form>
+
+        </article>
+
+        <article class="delete-modal-button-container">
+
+          <button class="delete-modal-btn" id="yes-btn">Yes</button>
+          <button class="delete-modal-btn" id="no-btn">No</button>
+
+        </article>
+        
+
+      </article>
+
+    </article>
    
 
   </table>
