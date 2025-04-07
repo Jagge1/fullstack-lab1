@@ -13,10 +13,35 @@ th, td {
   padding: 10px 15px;
 }
 
+th {
+  text-decoration: underline;
+}
+
 body {
-  display: flex;
-  justify-content: center;
+
+  text-align: center;
   background-color: whitesmoke;
+}
+
+
+.button-container {
+  display: flex;
+  margin-bottom: 15px;
+
+}
+
+.button-container button {
+  color:  white;
+  background-color: black;
+  border: none;
+  padding: 7px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.button-container button:hover {
+  background-color: rgb(56, 56, 56);
 }
 
 @media (max-width: 1470px) {
