@@ -1,0 +1,191 @@
+[{
+  "_id": {
+    "$oid": "67ea96742a1407f5b574f2e3"
+  },
+  "name": "Spaghetti and Meatballs",
+  "ingredients": [
+    "400g ground beef",
+    "1 egg",
+    "½ cup breadcrumbs",
+    "½ cup milk",
+    "1 garlic clove (minced)",
+    "Salt and pepper",
+    "1 can crushed tomatoes (about 400g / 14 oz)",
+    "1 garlic clove (or 1 tsp garlic powder)",
+    "1 tsp dried oregano or basil",
+    "1 tbsp olive oil",
+    "300–400g spaghetti"
+  ],
+  "cookingSteps": [
+    "Combine ground beef, egg, breadcrumbs, milk, garlic, salt, and pepper in a bowl. Roll into small balls.",
+    "Fry the meatballs in a pan with a little oil until they are brown on all sides. Remove and set aside.",
+    "In the same pan, cook garlic in some oil for 30 seconds. Add crushed tomatoes, herbs, salt, and pepper. Let it simmer for 10–15 minutes.",
+    "Put the meatballs back in the pan. Simmer for another 10–15 minutes until fully cooked.",
+    "Cook spaghetti in salted boiling water for 8–10 minutes. Drain the water.",
+    "Put spaghetti on a plate. Top with meatballs and tomato sauce. Optional: add grated cheese or herbs."
+  ],
+  "cookingTime": "40-45 minutes",
+  "flavorProfile": [
+    "savory",
+    "umami",
+    "mildly sweet",
+    "herby",
+    "garlicky"
+  ],
+  "origin": "Italy"
+},
+{
+  "_id": {
+    "$oid": "67ea977b2a1407f5b574f2e6"
+  },
+  "name": "Fried Rice",
+  "ingredients": [
+    "3 cups cooked rice (preferably cold)",
+    "2 tbsp oil (vegetable, canola, or sesame)",
+    "1 small onion (chopped)",
+    "2 garlic cloves (minced)",
+    "1 cup mixed vegetables (e.g. peas, carrots, corn)",
+    "2 eggs (lightly beaten)",
+    "1 cup cooked chicken, shrimp, or tofu (optional)",
+    "2–3 tbsp soy sauce",
+    "1 tsp sesame oil (optional)",
+    "Salt and pepper to taste"
+  ],
+  "cookingSteps": [
+    "Heat oil in a large pan or wok over medium-high heat.",
+    "Add chopped onion and garlic. Cook until soft and fragrant.",
+    "Add mixed vegetables and cook for 2–3 minutes.",
+    "Push the vegetables to the side and scramble the eggs in the empty space. Mix everything together.",
+    "Add the cooked rice and optional protein. Stir well to combine.",
+    "Pour in soy sauce and sesame oil. Stir-fry for a few more minutes.",
+    "Season with salt and pepper to taste. Serve hot."
+  ],
+  "cookingTime": "20–25 minutes",
+  "flavorProfile": [
+    "savory",
+    "umami",
+    "lightly salty",
+    "garlicky"
+  ],
+  "origin": "China"
+},
+{
+  "_id": {
+    "$oid": "67ea989a2a1407f5b574f2e8"
+  },
+  "name": "Chili con Carne",
+  "ingredients": [
+    "500g ground beef",
+    "1 onion (chopped)",
+    "2 garlic cloves (minced)",
+    "1 red bell pepper (chopped)",
+    "1 can kidney beans (drained and rinsed)",
+    "1 can chopped tomatoes (400g)",
+    "2 tbsp tomato paste",
+    "1 tsp ground cumin",
+    "1 tsp paprika",
+    "1/2 tsp chili powder (or to taste)",
+    "1 tbsp oil",
+    "Salt and pepper to taste",
+    "Optional: 1 tsp cocoa powder or a square of dark chocolate"
+  ],
+  "cookingSteps": [
+    "Heat oil in a large pot over medium heat.",
+    "Add chopped onion and garlic. Cook until soft.",
+    "Add ground beef and cook until browned.",
+    "Stir in bell pepper and cook for 2–3 minutes.",
+    "Add tomato paste, chopped tomatoes, kidney beans, and spices.",
+    "Optional: Add cocoa powder or dark chocolate for depth of flavor.",
+    "Stir everything and bring to a simmer.",
+    "Cover and cook on low heat for 20–30 minutes, stirring occasionally.",
+    "Season with salt and pepper to taste. Serve hot with rice or bread."
+  ],
+  "cookingTime": "40–45 minutes",
+  "flavorProfile": [
+    "savory",
+    "spicy",
+    "smoky",
+    "hearty",
+    "slightly sweet"
+  ],
+  "origin": "Mexico"
+},
+{
+  "_id": {
+    "$oid": "67ea98f92a1407f5b574f2ea"
+  },
+  "name": "Hamburger",
+  "ingredients": [
+    "500g ground beef",
+    "Salt and pepper",
+    "4 burger buns",
+    "4 slices of cheese (optional)",
+    "Lettuce",
+    "Tomato (sliced)",
+    "Onion (sliced)",
+    "Pickles (optional)",
+    "Ketchup",
+    "Mustard",
+    "Mayonnaise",
+    "Oil or butter for frying"
+  ],
+  "cookingSteps": [
+    "Season the ground beef with salt and pepper. Form into 4 burger patties.",
+    "Heat a pan or grill over medium-high heat. Add a little oil or butter.",
+    "Cook the patties for about 3–4 minutes per side, or until desired doneness.",
+    "If using cheese, place a slice on each patty during the last minute of cooking to melt.",
+    "Toast the burger buns lightly in a pan or toaster.",
+    "Assemble the burgers: bottom bun, patty, toppings (lettuce, tomato, onion, pickles), sauces, and top bun.",
+    "Serve immediately with fries or salad."
+  ],
+  "cookingTime": "25–30 minutes",
+  "flavorProfile": [
+    "savory",
+    "juicy",
+    "meaty",
+    "slightly sweet"
+  ],
+  "origin": "United States"
+},
+{
+  "_id": {
+    "$oid": "67ea99592a1407f5b574f2ec"
+  },
+  "name": "Pho",
+  "ingredients": [
+    "200g rice noodles",
+    "1 onion (halved)",
+    "1 piece of ginger (5–6 cm, sliced)",
+    "1 liter beef broth (or chicken broth)",
+    "200g thinly sliced beef (like sirloin or flank steak)",
+    "2 star anise",
+    "1 cinnamon stick",
+    "2 cloves",
+    "1 tbsp fish sauce",
+    "Salt and pepper to taste",
+    "Bean sprouts",
+    "Fresh basil",
+    "Fresh coriander (cilantro)",
+    "Lime wedges",
+    "Chili slices (optional)",
+    "Spring onion (sliced)"
+  ],
+  "cookingSteps": [
+    "Char the onion and ginger in a dry pan or over open flame until slightly blackened.",
+    "In a pot, combine broth, charred onion and ginger, star anise, cinnamon, and cloves. Simmer for 20–30 minutes.",
+    "Soak or cook rice noodles according to package instructions. Drain and set aside.",
+    "Strain the broth, then add fish sauce, salt, and pepper to taste.",
+    "Place noodles in bowls. Top with thin slices of raw beef.",
+    "Pour hot broth over the beef to cook it instantly.",
+    "Serve with fresh herbs, bean sprouts, lime, and chili on the side."
+  ],
+  "cookingTime": "45–60 minutes",
+  "flavorProfile": [
+    "umami",
+    "aromatic",
+    "savory",
+    "spiced",
+    "fresh"
+  ],
+  "origin": "Vietnam"
+}]
