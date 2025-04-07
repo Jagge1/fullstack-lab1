@@ -16,8 +16,8 @@ async function getDishes() {
     let row = `
       <tr>
         <td>${data[i].name}</td>
-        <td>${(data[i].ingredients).join(', ')}</td>
-        <td>${(data[i].cookingSteps).join(', ')}</td>
+        <td>${(data[i].ingredients).join('')  }</td>
+        <td>${(data[i].cookingSteps).join('')  }</td>
         <td>${data[i].cookingTime}</td>
         <td>${data[i].flavorProfile}</td> 
         <td>${data[i].origin}</td>      
