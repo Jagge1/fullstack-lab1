@@ -1,15 +1,20 @@
 table {
-  background-color: rgb(37, 130, 176);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
-  padding: 7px 10px;
+  border-spacing: 20px;
+  
 }
 
-.table-header {
-  margin-right: 10px;
+th, td {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: white;
+  border-radius: 7px;
+  padding: 10px 15px;
 }
 
 body {
   display: flex;
   justify-content: center;
+  background-color: whitesmoke;
 }
