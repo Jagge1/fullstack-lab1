@@ -97,10 +97,11 @@ function showModal(){
   document.addEventListener('click', function(e) {
     if (e.target.classList.contains('update-btn')) {
       document.getElementById('myModal').style.display = 'block';
-      title.innerText = 'Update Dish' 
-      form.style.display = 'block'
-      yesButton.style.display = 'none'
-      noButton.style.display = 'none'   
+      title.innerText = 'Update Dish' ;
+      form.style.display = 'block';
+      yesButton.style.display = 'none';
+      noButton.style.display = 'none'; 
+      description.style.display = 'none';  
     }
   });
 
