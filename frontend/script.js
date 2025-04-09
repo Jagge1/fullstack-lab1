@@ -45,13 +45,17 @@ async function deleteDish(id) {
 
   if (response.ok) {
     console.log('Dish was deleted')
+    window.location.reload()
   }
   
 }
 
-function updateDish() {
+function updateDish(id) {
 
-  document.getElementById('update-form').addEventListener('submit', async (e)=> {
+  let form = document.getElementById('update-form');
+
+  form.onsubmit = async function (e) {
+ 
     e.preventDefault();
 
     let name = document.getElementById('name-input').value;
@@ -70,7 +74,7 @@ function updateDish() {
       origin: origin
     };
 
-    const response = await fetch(`/api/dishes/${encodeURIComponent(name)}`, {
+    const response = await fetch(`/api/dishes/${encodeURIComponent(id)}`, {
 
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +84,12 @@ function updateDish() {
       body: JSON.stringify(updatedDish)
   
     });
-});
+
+    if (response.ok) {
+      console.log('Dish was updated');
+      window.location.reload();
+    }
+}
 }
 
 function showModal(){
@@ -92,6 +101,7 @@ function showModal(){
   let description = document.getElementById('modal-description');
   let modal = document.getElementById('myModal');
   let dishToDelete = '';
+  let dishToUpdate = '';
 
   
   document.addEventListener('click', function(e) {
@@ -101,7 +111,9 @@ function showModal(){
       form.style.display = 'block';
       yesButton.style.display = 'none';
       noButton.style.display = 'none'; 
-      description.style.display = 'none';  
+      description.style.display = 'none'; 
+      dishToUpdate = e.target.getAttribute('data-id');
+      updateDish(dishToUpdate);
     }
   });
 
@@ -109,7 +121,8 @@ function showModal(){
     if (e.target.classList.contains('delete-btn')) {
       document.getElementById('myModal').style.display = 'block';
       title.innerText = 'Delete dish'
-      description.innerText = 'Are you sure want to delete this dish?' 
+      description.innerText = 'Are you sure want to delete this dish?'
+      description.style.display = 'block' 
       form.style.display = 'none'
       yesButton.style.display = 'inline-block'
       noButton.style.display = 'inline-block' 
@@ -121,7 +134,6 @@ function showModal(){
     console.log('Yes click')
     deleteDish(dishToDelete);
     modal.style.display = 'none';
-    window.location.reload()
   })
 
   
@@ -143,5 +155,4 @@ function showModal(){
 
 
 getDishes();
-updateDish();
 showModal();
