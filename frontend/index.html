@@ -9,6 +9,7 @@
 <body>
 
   <table id="dish-table">
+
     <tr>
       
       <th class="table-header">Name &#128221;</th>
@@ -32,22 +33,22 @@
         <form >
 
         <label for="">Name</label>
-        <input class="input-field" type="text" name="" id="name-input" placeholder="Hamburger">
+        <input class="input-field" type="text" name="" id="name-input" placeholder="Hamburger" required>
 
         <label for="">Ingredients (separate with ",")</label>
-        <textarea class="textbox" id="ingredients-input" placeholder="500g ground beef, 1 onion..."></textarea>
+        <textarea class="textbox" id="ingredients-input" placeholder="500g ground beef, 1 onion..." required></textarea>
 
         <label for="">Cooking steps (separate with ",")</label>
-        <textarea class="textbox" id="cooking-steps-input" placeholder="Season the ground beef with salt and pepper, Form into 4 burger patties..."></textarea>
+        <textarea class="textbox" id="cooking-steps-input" placeholder="Season the ground beef with salt and pepper, Form into 4 burger patties..." required></textarea>
 
         <label for="">Cooking Time </label>
-        <input class="input-field" type="text" name="" id="cooking-time-input" placeholder="40-45 minutes">
+        <input class="input-field" type="text" name="" id="cooking-time-input" placeholder="40-45 minutes" required>
 
         <label for="">Flavor Profile (separate with ",")</label>
-        <input class="input-field" type="text" name="" id="flavor-profile-input" placeholder="savory, juicy...">
+        <input class="input-field" type="text" name="" id="flavor-profile-input" placeholder="savory, juicy..." required>
 
         <label for="">Origin</label>
-        <input class="input-field" type="text" name="" id="origin-input" placeholder="United States">
+        <input class="input-field" type="text" name="" id="origin-input" placeholder="United States" required>
 
         <input type="submit" value="Submit" id="submit-btn">
         </form>
@@ -68,6 +69,8 @@
    
 
   </table>
+
+  <button class="add-dish-btn">Add new dish</button>
   
   <script src="script.js"></script>
 </body>

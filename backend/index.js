@@ -1,3 +1,4 @@
+//Modules and environmental variables
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
@@ -5,11 +6,14 @@ const Dish = require('./dish.model.js');
 const app = express();
 const port = 5000;
 
+//Middleware to parse JSON and serve files from the frontend folder 
 app.use(express.json());
 app.use(express.static('frontend'));
 
+//Connection string to MongoDB
 mongoose.connect(process.env.MONG_URI);
 
+//Get function - Fetches all dishes from the database
 app.get('/api/dishes', async (req, res) => {
   try {
     const dishes = await Dish.find({});
@@ -22,6 +26,7 @@ app.get('/api/dishes', async (req, res) => {
   }
 });
 
+//Get function - Fetches a dish/es by name
 app.get('/api/dishes/:name', async (req, res) => {
   const {name} = req.params;
 
@@ -41,6 +46,7 @@ app.get('/api/dishes/:name', async (req, res) => {
   }
 });
 
+//Post function - Creates new dish
 app.post('/api/dishes', async (req, res) => {   
     const {name} = req.body;
 
@@ -58,6 +64,7 @@ app.post('/api/dishes', async (req, res) => {
     }
 });
 
+//Put function - updates dish/es
 app.put('/api/dishes/:id', async (req, res) => {
   try {
     const {id} = req.params;
@@ -75,6 +82,7 @@ app.put('/api/dishes/:id', async (req, res) => {
   }
 });
 
+//Delete function - deletes dish by id
 app.delete('/api/dishes/:id', async (req, res) => {
   try {
     const {id} = req.params;

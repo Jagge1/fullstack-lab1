@@ -39,6 +39,23 @@ body {
   transition-timing-function: ease-in-out;
 }
 
+.add-dish-btn {
+  color:  white;
+  background-color: rgb(97, 97, 169);
+  border: none;
+  padding: 7px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  margin-bottom: 15px;
+}
+
+.add-dish-btn:hover {
+  background-color: rgb(71, 71, 122);
+}
+
 .button-container button:hover {
   background-color: rgb(71, 71, 122);
 }
